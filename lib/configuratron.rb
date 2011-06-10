@@ -44,7 +44,7 @@ class Configuratron < BlankSlate
         __send__ :[]=, base_name, *args
       else
         _define_singleton_method(name) do
-          __send__(:[], name.to_sym)
+          __send__ :[], name.to_sym
         end
         __send__ :[], name.to_sym
       end
