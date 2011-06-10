@@ -38,7 +38,7 @@ class Configuratron
 
     def method_missing(name, *args, &block)
       if name.to_s[-1..-1] == '=' # workaround for 1.8 returning char
-        base_name = name.to_s[0..-2].intern.to_sym
+        base_name = name.to_s[0..-2].intern
         _singleton_class.instance_exec(name) do |name|
           define_method(name) do |value|
             __send__ :[]=, base_name, value
