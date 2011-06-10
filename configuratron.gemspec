@@ -1,10 +1,8 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "configuratron/version"
 
 Gem::Specification.new do |s|
   s.name        = "configuratron"
-  s.version     = Configuratron::VERSION
+  s.version     = "0.0.1"
   s.authors     = ["Grzesiek Kolodziejczyk"]
   s.email       = ["gkolodziejczyk@gmail.com"]
   s.homepage    = ""

@@ -1,7 +1,6 @@
-require "configuratron/version"
 require "configuratron/blank_slate"
 
-class Configuratron
+class Configuratron < BlankSlate
   def initialize
     @config = ConfigHash.new
   end
