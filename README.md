@@ -1,4 +1,4 @@
-# Configuratron ![build status](http://travis-ci.org/grk/configuratron.png)
+# Configuratron ![build status](http://travis-ci.org/grk/configuratron.png) ![still maintained](http://stillmaintained.com/grk/configuratron.png)
 
 Configuratron is a library for storing configuraion. Objects of this
 class can access internal storage with a hash-like interface or method
