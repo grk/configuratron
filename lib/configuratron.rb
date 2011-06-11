@@ -17,6 +17,12 @@ class Configuratron < BlankSlate
     @config.__send__(name, *args, &block)
   end
 
+  module Configurable
+    def config
+      @config ||= Configuratron.new
+    end
+  end
+
   class ConfigHash < BlankSlate
     def initialize(hash = nil)
       @hash = {}
