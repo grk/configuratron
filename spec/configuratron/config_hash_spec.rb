@@ -9,6 +9,11 @@ describe Configuratron::ConfigHash do
     end
   end
 
+  if defined?(RUBY_ENGINE) && RUBY_ENGINE == "rbx"
+    Configuratron::ConfigHash.reveal("singleton_methods")
+    Configuratron::ConfigHash.reveal("kind_of?")
+  end
+
   before(:each) do
     @ch = Configuratron::ConfigHash.new
   end
